@@ -17,7 +17,6 @@ use App\Http\Controllers\RatingController;
 
 
 Route::post('/rate/{productId}', [RatingController::class, 'rateProduct']);
-Route::post('/change-rating/{productId}', [RatingController::class, 'changeRating']);
 Route::post('/remove-rating/{productId}', [RatingController::class, 'removeRating']);
 Route::get('/products', [RatingController::class, 'listProducts']);
 
